@@ -1,0 +1,99 @@
+/* Utilities Styling */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto; /* gets rid of the gap at the top caused by the h1 & h2 margin of 10px */
+  padding: 0 40px;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex; /* turns it into a flex column */
+  justify-content: space-between; /* pertains to the main */
+  align-items: center; /* pertains to the cross */
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Margin */
+
+.my-1 {
+  margin: 1rem 0; /* default rem = 16px */
+}
+
+.my-2 {
+  margin: 1.5rem 0; /* 1.5rem top, 0 left and right */
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem; /* default rem = 16px */
+}
+
+.m-2 {
+  margin: 1.5rem; /* 1.5rem all around */
+}
+
+.m-3 {
+  margin: 2rem;
+}
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
