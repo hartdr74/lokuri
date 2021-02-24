@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
+/* Selects the root element of the document:   <html> in the case of HTML */
 :root {
   --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
 }
 
 /* Creating a reset using the universal selector (*) */
@@ -135,4 +139,66 @@ img {
 /* Stats */
 .stats {
   padding-top: 100px;
+}
+
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: 35px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* CLI */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+  /* using the first-child so images can be changed without effecting the code */
+  grid-column: 1 / span 2; /* image spans 2 columns */
+  grid-row: 1 / span 2; /* image spans 2 rows */
+}
+
+/* Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+/*.languages {
+  text-align: center;
+}*/
+
+.languages,
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.languages .card {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+/* Footer */
+.footer .social a{
+  margin 0 10px;
 }
