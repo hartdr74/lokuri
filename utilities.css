@@ -34,6 +34,64 @@
   transform: scale(0.98);
 }
 
+/* Backgrounds & coloured buttons */
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a,
+.bg-light a,
+.btn-light a {
+  color: #fff;
+}
+
+/* Text sizes - kind of a framework of classes when added to HTML */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+)
+
 .text-center {
   text-align: center;
 }
@@ -96,4 +154,45 @@
 
 .m-5 {
   margin: 4rem;
+}
+
+/*49:49*/
+/* Padding */
+
+.py-1 {
+  margin: 1rem 0; /* default rem = 16px */
+}
+
+.py-2 {
+  padding: 1.5rem 0; /* 1.5rem top, 0 left and right */
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1rem 0; /* default rem = 16px */
+}
+
+.p-2 {
+  padding: 1.5rem 0; /* 1.5rem top, 0 left and right */
+}
+
+.p-3 {
+  padding: 2rem 0;
+}
+.p-4 {
+  padding: 3rem 0;
+}
+
+.p-5 {
+  padding: 4rem 0;
 }
